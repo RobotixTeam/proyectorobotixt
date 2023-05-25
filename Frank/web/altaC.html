@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Alta de Computadora</title>
+    <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+        
+        main {
+            margin: 20px;
+            text-align: center;
+        }
+        
+        h1 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+        
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        
+        label {
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        
+        input[type="text"],
+        input[type="date"],
+        input[type="time"] {
+            padding: 5px;
+            margin-bottom: 10px;
+            width: 250px;
+        }
+        
+        input[type="submit"] {
+            padding: 10px 20px;
+            background-color: #333;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+        
+        input[type="submit"]:hover {
+            background-color: #555;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Alta de Computadora</h1>
+    </header>
+    <main>
+        <form action="altaC.jsp" method="post">
+            <label for="id_computadora">ID Computadora:</label>
+            <input type="text" id="id_computadora" name="id_computadora" required><br><br>
+            
+            <label for="tipo_reporte">Tipo de Reporte:</label>
+            <input type="text" id="tipo_reporte" name="tipo_reporte" required><br><br>
+            
+            <label for="descripcion">Descripción:</label>
+            <input type="text" id="descripcion" name="descripcion" required><br><br>
+            
+            <label for="salon">Salón:</label>
+            <input type="text" id="salon" name="salon" required><br><br>
+            
+            <label for="fecha">Fecha:</label>
+            <input type="date" id="fecha" name="fecha" required><br><br>
+            
+            <label for="hora">Hora:</label>
+            <input type="time" id="hora" name="hora" required><br><br>
+            
+            <label for="modelo">Modelo:</label>
+            <input type="text" id="modelo" name="modelo" required><br><br>
+            
+            <label for="clave_administrador">Clave del Administrador:</label>
+            <input type="text" id="clave_administrador" name="clave_administrador" required><br><br>
+            
+            <label for="RFC_maestro">RFC del Maestro:</label>
+            <input type="text" id="RFC_maestro" name="RFC_maestro" required><br><br>
+            
+            <label for="numero_boleta_alumno">Número de Boleta del Alumno:</label>
+            <input type="text" id="numero_boleta_alumno" name="numero_boleta_alumno" required><br><br>
+            
+            <input type="submit" value="Guardar">
+        </form>
+    </main>
+</body>
+</html>
